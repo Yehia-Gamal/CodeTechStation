@@ -56,3 +56,8 @@ ul {
 }
 
 /* End Global Rules */
+
+h1 {
+  text-align: center;
+  padding-top: 45vh;
+}
