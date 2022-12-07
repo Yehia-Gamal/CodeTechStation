@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
 :root {
-  --main-color:#31cbf2;
+  --main-color: #31cbf2;
 }
 
 /* Start Global Rules */
@@ -81,6 +82,18 @@ h1 {
 .nav-link {
   font-size: 20px;
 }
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.navbar-brand:focus,
+ .navbar-brand:hover {
+  color: var(--main-color);
+}
+
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
