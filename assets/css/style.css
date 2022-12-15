@@ -132,7 +132,7 @@ header {
   display: flex;
   height: calc(100vh - 70px);
 
-  background-image: url(/assets/images/Bg-landing.jpg);
+  background-image: url(../images/Bg-landing.WebP);
   background-size: cover;
   background-position: 50%;
 }
@@ -324,7 +324,7 @@ header {
   width: 300px;
   border: 6px solid var(--main-color);
   margin: auto;
-  background-image: url(/assets/images/me.jpeg);
+  background-image: url(../images/me.WebP);
   background-size: cover;
   background-position: 50%;
   border-radius: 70% 34% 30% 66%/65% 30% 70% 70%;
