@@ -4,6 +4,7 @@
   --main-color: #31cbf2;
   --bg-color: #000405;
   --text-color: #888;
+  --main-transition: all 0.5s ease-in-out;
 }
 
 /* Start Global Rules */
@@ -399,6 +400,66 @@ header {
 
 /* End Landing Page */
 
+/* Start About Section */
+.about {}
+
+.about .images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 320px;
+  max-height: 320px;
+}
+
+.about .images::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  border: 10px solid var(--main-color);
+  border-radius: 6px;
+  z-index: 0;
+}
+
+.about .images img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 6px;
+  top: 45px;
+  left: 30px;
+  z-index: 1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about .text .link {
+  color: var(--main-color);
+  transition: var(--main-transition);
+}
+
+.about .text .link:hover {
+  letter-spacing: 1px;
+}
+
+@media (max-width: 400px) {
+  .about .images img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .about .images::after {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* End About Section */
+
 /* start Animation */
 
 @keyframes border-radius_animation {
@@ -413,7 +474,7 @@ header {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
     top: -50px;
   }
-  
+
 }
 
 @keyframes left-move {
