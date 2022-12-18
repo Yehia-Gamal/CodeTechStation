@@ -437,6 +437,10 @@ header {
   object-position: top;
 }
 
+.about .text {
+  margin-top: 60px;
+}
+
 .about .text .link {
   color: var(--main-color);
   transition: var(--main-transition);
