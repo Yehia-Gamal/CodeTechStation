@@ -3,6 +3,7 @@
 :root {
   --main-color: #31cbf2;
   --bg-color: #000405;
+  --section-padding:50px;
   --text-color: #888;
   --main-transition: all 0.5s ease-in-out;
 }
@@ -401,7 +402,10 @@ header {
 /* End Landing Page */
 
 /* Start About Section */
-.about {}
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
 
 .about .images {
   position: relative;
