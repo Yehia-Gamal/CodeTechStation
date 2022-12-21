@@ -422,10 +422,6 @@ header {
   .speed-counter {
     display: none;
   }
-  .speed-counter label {
-    display: none;
-  }
-
 }
 
 /* End Landing Page */
