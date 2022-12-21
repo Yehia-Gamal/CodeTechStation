@@ -3,7 +3,7 @@
 :root {
   --main-color: #31cbf2;
   --bg-color: #000405;
-  --section-padding:50px;
+  --section-padding: 50px;
   --text-color: #888;
   --main-transition: all 0.5s ease-in-out;
 }
@@ -175,11 +175,11 @@ header {
 /* Start Landing Page */
 
 .landing {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: calc(100vh - 70px);
-
   background-image: url(../images/Bg-landing.WebP);
   background-size: cover;
   background-position: 50%;
@@ -220,6 +220,27 @@ header {
   justify-content: center;
 }
 
+.speed-counter {
+  bottom: 20px;
+  right: 0;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.speed-counter input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: var(--main-color);
+  border: none;
+  text-align: center;
+}
+
+.speed-counter input:focus {
+  outline: none;
+}
 
 .landing .left-content .inner-content aside {
   height: 100%;
@@ -398,6 +419,13 @@ header {
   .landing .right-slider {
     width: 100%;
   }
+  .speed-counter {
+    display: none;
+  }
+  .speed-counter label {
+    display: none;
+  }
+
 }
 
 /* End Landing Page */
