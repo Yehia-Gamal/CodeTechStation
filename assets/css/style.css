@@ -219,6 +219,10 @@ header {
   justify-content: center;
 }
 
+.landing .left-content .inner-content .text-auto {
+  color: var(--main-color);
+}
+
 .speed-counter {
   bottom: 20px;
   right: 0;
