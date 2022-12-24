@@ -2,6 +2,7 @@
 
 :root {
   --main-color: #31cbf2;
+  --main-color-alt: #2075d4;
   --bg-color: #000405;
   --section-padding: 50px;
   --text-color: #888;
@@ -22,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -422,6 +424,7 @@ header {
   .landing .right-slider {
     width: 100%;
   }
+
   .speed-counter {
     display: none;
   }
@@ -486,6 +489,10 @@ header {
   letter-spacing: 1px;
 }
 
+.contact-about .btns .contact {
+  letter-spacing: 1px;
+}
+
 @media (max-width: 400px) {
   .about .images img {
     width: 90%;
@@ -499,6 +506,85 @@ header {
 }
 
 /* End About Section */
+
+/* Start Services Section */
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.services .services-card {
+  position: relative;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  box-shadow: -3px 5px 13px 1px rgb(49 203 242 / 30%), inset 0px 0px 10px 1px var(--main-color-alt);
+  overflow: hidden;
+  transition: var(--main-transition);
+  cursor: pointer;
+  padding: 5px;
+  margin: 15px 10px;
+  max-width: 300px;
+}
+
+.services .services-card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  background-color: var(--main-color-alt);
+  transition: var(--main-transition);
+}
+
+.services .services-card:hover::before {
+  width: 100%;
+}
+
+.services .services-card .image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 0;
+}
+
+.services .services-card:hover {
+  opacity: 0.9;
+  transform: translateY(-10px) scale(1.1);
+}
+
+.services .services-card .image img {
+  max-width: 100%;
+}
+
+.services .services-card .info {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.services .services-card .info h3 {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* End Services Section */
+
+/* Start Work Gallery Section */
+.gallery {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+/* End Work Gallery Section */
+
+
+
+
+
+
+
+
+
 
 /* start Animation */
 
