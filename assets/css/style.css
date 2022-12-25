@@ -160,6 +160,19 @@ header {
   box-shadow: 0px 0px 8px 3px var(--main-color);
 }
 
+.navbar-toggler {
+  width: 56px;
+  height: 40px;
+}
+.navbar-toggler span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  border-radius: 6px;
+  margin: 5px 0;
+  background-color: #888;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
   color: var(--main-color);
@@ -435,7 +448,6 @@ header {
 /* Start About Section */
 .about {
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
 }
 
 .about .images {
@@ -503,6 +515,9 @@ header {
     width: 90%;
     height: 90%;
   }
+  .about .text {
+    padding: 0px 27px;
+  }
 }
 
 /* End About Section */
@@ -510,7 +525,6 @@ header {
 /* Start Services Section */
 .services {
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
 }
 
 .services .services-card {
@@ -573,7 +587,6 @@ header {
 /* Start Work Gallery Section */
 .gallery {
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
 }
 /* End Work Gallery Section */
 
