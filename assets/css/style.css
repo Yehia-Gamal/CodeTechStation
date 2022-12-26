@@ -164,6 +164,7 @@ header {
   width: 56px;
   height: 40px;
 }
+
 .navbar-toggler span {
   display: block;
   height: 3px;
@@ -515,6 +516,7 @@ header {
     width: 90%;
     height: 90%;
   }
+
   .about .text {
     padding: 0px 27px;
   }
@@ -540,6 +542,14 @@ header {
   margin: 15px 10px;
   max-width: 300px;
 }
+
+
+@media (min-width: 1000px) {
+  .services .services-card.col-lg-3 {
+    width: 23% !important;
+  }
+}
+
 
 .services .services-card::before {
   content: "";
@@ -588,6 +598,7 @@ header {
 .gallery {
   padding-top: var(--section-padding);
 }
+
 /* End Work Gallery Section */
 
 
