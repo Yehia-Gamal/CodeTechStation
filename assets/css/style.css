@@ -544,9 +544,15 @@ header {
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1100px) {
   .services .services-card.col-lg-3 {
-    width: 23% !important;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .services .services-card.col-lg-3 {
+    width: 23%;
   }
 }
 
@@ -594,12 +600,26 @@ header {
 
 /* End Services Section */
 
+/* Start Skills Section */
+.Skills {
+  padding-top: var(--section-padding);
+}
+
+/* End Skills Section */
+
 /* Start Work Gallery Section */
 .gallery {
   padding-top: var(--section-padding);
 }
 
 /* End Work Gallery Section */
+
+/* Start Contact Us Section */
+.contact {
+  padding-top: var(--section-padding);
+}
+
+/* End Contact Us Section */
 
 
 
