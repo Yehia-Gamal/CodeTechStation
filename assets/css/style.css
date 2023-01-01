@@ -809,75 +809,130 @@ ul {
 
 /* Start Skills Section */
 .skills-section {
+  position: relative;
   padding-top: var(--section-padding);
-  position: relative;
-}
-
-.text-skills {
-  position: absolute;
-  left: 0;
-  top: 0;
   overflow: hidden;
-  font-size: 50vw;
-  filter: opacity(0.2);
-  text-align: center;
-  margin: 0 auto;
-  font-family: "Genos";
-  width: 100%;
-  height: fit-content;
-  z-index: 0;
-  font-weight: normal;
 }
 
-.skills-section img {
+/* Start 3D Rotating Cube */
+.career-section-image {
   position: relative;
-  width: 40%;
-  margin: 0 auto;
-  background: transparent;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 30rem;
+  flex: 1 1 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
   -webkit-animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
   -o-animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
   z-index: 1;
 }
 
-/* End of Skills Section */
+.career-section-wrapper:nth-child(2),
+.career-section-wrapper:last-child {
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
 
-/* Mobile devices Styling */
-@media screen and (max-width: 1300px) {
-  .skills-section {
-    padding: 0 1rem;
+.career-section-image img {
+  width: 100%;
+  max-width: 75%;
+}
+
+.career-image-overflow {
+  height: 30rem;
+}
+
+.cube-container {
+  perspective: 600px;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: spin 18s linear infinite;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 100px #02203c;
+  display: flex;
+  align-items: center;
+}
+
+.cube__face img {
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;
+}
+
+.cube-face--left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube-face--front {
+  transform: rotateY(0deg) translateZ(150px);
+}
+
+.cube-face--back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.cube-face--right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.cube-face--top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.cube-face--bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+@media (max-width: 600px) {
+
+  .cube__face {
+    width: 70%;
+    height: 70%;
+  }
+
+  .cube-face--left {
+    transform: rotateY(-90deg) translateZ(105px);
+  }
+
+  .cube-face--front {
+    transform: rotateY(0deg) translateZ(105px);
+  }
+
+  .cube-face--back {
+    transform: rotateY(180deg) translateZ(105px);
+  }
+
+  .cube-face--right {
+    transform: rotateY(90deg) translateZ(105px);
+  }
+
+  .cube-face--top {
+    transform: rotateX(90deg) translateZ(105px);
+  }
+
+  .cube-face--bottom {
+    transform: rotateX(-90deg) translateZ(105px);
   }
 }
 
-@media screen and (max-width: 1024px) {
-  /* h1.text-skills {
-    font-size: 16rem;
-    opacity: 0.9;
-  } */
-}
-
-@media screen and (max-width: 768px) {
-  /* h1.text-skills {
-    font-size: 12rem;
-  } */
-}
-
-@media screen and (max-width: 480px) {
-  .skills-section img {
-    width: 60%;
-  }
-
-  /* h1.text-skills {
-    font-size: 8rem;
-  } */
-}
-
-@media screen and (max-width: 360px) {
-  /* h1.text-skills {
-    font-size: 5rem;
-  } */
-}
-
+/* End 3D Rotating Cube */
 
 /* End Skills Section */
 
@@ -895,11 +950,6 @@ ul {
 }
 
 /* End Contact Us Section */
-
-
-
-
-
 
 
 
@@ -962,7 +1012,17 @@ ul {
   }
 
   100% {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(1turn);
   }
 }
 
