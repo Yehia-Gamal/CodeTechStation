@@ -5,6 +5,7 @@
   --main-color: #31cbf2;
   --main-color-alt: #2075d4;
   --bg-color: #000405;
+  /* --bg-color: #0b0b0c; */
   --section-padding: 50px;
   --text-color: #888;
   --main-transition: all 0.5s ease-in-out;
@@ -229,18 +230,20 @@ ul {
   position: relative;
   background-color: #1e1f26;
   text-align: center;
-  padding: 0 2em;
+  /* padding: 0 2em; */
 }
 
 .nav .brandName {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 5vw;
+  font-size: 8vw;
   margin: 0;
-  padding-bottom: 0.5rem;
-  letter-spacing: 0.5rem;
-  color: #03dac6;
-  transition: all 0.3s ease;
+  padding-bottom: 15px;
+  letter-spacing: 5px;
+  color: var(--main-color);
+  transition: all 0.4s ease;
+  position: relative;
   z-index: 3;
+  font-weight: bold;
 }
 
 .brandName:hover {
@@ -248,37 +251,47 @@ ul {
   color: #ff0266;
 }
 
+.nav h2 {
+  position: relative;
+  z-index: 3;
+}
+
 
 .background {
   position: absolute;
-  height: 90vh;
+  height: 100vh;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   z-index: 0;
 }
 
-@media (min-width: 800px) {
 
-  .nav .brandName {
-    font-size: 5vw;
-  }
-
+@media (max-width: 360px) {
   .nav h2 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 }
 
 @media (min-width: 360px) {
 
   .nav .brandName {
-    font-size: 8vw;
+    font-size: 9vw;
   }
 
   .nav h2 {
-    font-size: 2vw;
-    letter-spacing: 0.2vw;
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .nav .brandName {
+    font-size: 9vw;
+  }
+
+  .nav h2 {
+    font-size: 3vw;
   }
 }
 
