@@ -148,4 +148,22 @@ class CodeTechStation {
   }
 }
 
+// Set a variable to hold the number of visits
+let visitCount = 0;
+
+// Check if the visitCount has already been saved in local storage
+if (localStorage.getItem("visitCount")) {
+  // If it has, retrieve the visitCount from local storage and add 1 to it
+  visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
+} else {
+  // If it has not, set the visitCount to 1
+  visitCount = 1;
+}
+
+// Save the visitCount back to local storage
+localStorage.setItem("visitCount", visitCount);
+
+// Output the visitCount to the page
+document.write("Number of visits: " + visitCount);
+
 new CodeTechStation();
