@@ -226,6 +226,8 @@ ul {
 }
 
 .navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .show>.nav-link:focus,
 .navbar-nav .show>.nav-link {
   color: var(--main-color);
   font-weight: bold;

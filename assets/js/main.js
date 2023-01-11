@@ -19,6 +19,21 @@ const particles = Particles.init({
   ],
 });
 
+// Add Class Active To Header Nav And Remove 
+const active = document.querySelectorAll(".nav-container .nav-link");
+
+active.forEach((li) => {
+  li.addEventListener("click", removeActive);
+})
+
+// Remove Active Class From All Lis And Add Class Active Only To Current
+function removeActive() {
+  active.forEach((li) => {
+    li.classList.remove("active")
+    this.classList.add("active")
+  })
+}
+
 // Auto Text Effect
 const textEl = document.querySelector(".text-auto");
 const speedEl = document.getElementById("speed");
@@ -147,23 +162,5 @@ class CodeTechStation {
     $(".nav-tab-slider").css("left", left);
   }
 }
-
-// Set a variable to hold the number of visits
-let visitCount = 0;
-
-// Check if the visitCount has already been saved in local storage
-if (localStorage.getItem("visitCount")) {
-  // If it has, retrieve the visitCount from local storage and add 1 to it
-  visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
-} else {
-  // If it has not, set the visitCount to 1
-  visitCount = 1;
-}
-
-// Save the visitCount back to local storage
-localStorage.setItem("visitCount", visitCount);
-
-// Output the visitCount to the page
-document.write("Number of visits: " + visitCount);
 
 new CodeTechStation();
