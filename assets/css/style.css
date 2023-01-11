@@ -1,11 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Titillium+Web:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 :root {
   --main-color: #31cbf2;
   --main-color-alt: #2075d4;
   --bg-color: #000405;
-  /* --bg-color: #0b0b0c; */
   --section-padding: 50px;
   --text-color: #888;
   --main-transition: all 0.5s ease-in-out;
@@ -19,10 +17,7 @@
 }
 
 body {
-  font-family: 'Cinzel Decorative', cursive;
   font-family: "Fira Sans", sans-serif;
-  font-family: "ROBOTO", sans-serif;
-  /* font-family: "Genos"; */
   background-color: var(--bg-color);
   overflow-x: hidden;
   margin: 0;
@@ -163,11 +158,11 @@ ul {
   }
 }
 
-/* .nav-container--top-first {
+.nav-container--top-first {
   position: fixed;
   top: 75px;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-} */
+}
 
 .nav-container--top-second {
   position: fixed;
@@ -181,6 +176,9 @@ ul {
 
 .navbar-brand {
   color: var(--main-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .navbar-brand img {
@@ -273,6 +271,7 @@ ul {
 }
 
 .nav h2 {
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
   z-index: 3;
 }
@@ -864,7 +863,7 @@ ul {
 }
 
 .career-image-overflow {
-  height: 30rem;
+  height: 37rem;
 }
 
 .cube-container {
@@ -1036,7 +1035,7 @@ ul {
   }
 
   100% {
-    transform: rotate(180deg);
+    transform: rotate(1turn);
   }
 }
 
