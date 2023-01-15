@@ -968,7 +968,7 @@ ul {
   padding-top: var(--section-padding);
 }
 
-.gallery .portfolio  {
+.gallery .portfolio {
   position: relative;
   border-radius: 6px;
   margin: 5px 0;
@@ -987,6 +987,10 @@ ul {
   padding: 0.3rem 1rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   box-shadow: inset 0px 0px 6px var(--main-color);
+}
+
+.gallery .portfolio .link-top:hover {
+  color: var(--main-color);
 }
 
 .gallery .portfolio .info {
