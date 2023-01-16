@@ -5,6 +5,7 @@
 :root {
   --main-color: #31cbf2;
   --main-color-alt: #2075d4;
+  --second-color:#dc004d;
   --bg-color: #000405;
   --section-padding: 50px;
   --text-color: #888;
@@ -273,7 +274,7 @@ ul {
 
 .brandName:hover {
   transform: translate3d(0, -10px, 22px);
-  color: #ff0266;
+  color: var(--second-color);
 }
 
 .nav h2 {
@@ -322,15 +323,15 @@ ul {
 }
 
 .loader span {
-  color: #faebd7;
-  text-shadow: 0 0 0 #faebd7;
+  color: var(--main-color);
+  text-shadow: 0 0 0 var(--main-color);
   -webkit-animation: loading 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70px #ff0266;
-    color: #ff0266;
+    text-shadow: 20px 0 70px var(--second-color);
+    color: var(--second-color);
   }
 }
 
@@ -1103,7 +1104,8 @@ ul {
   margin: 10px 0;
 }
 
-.contact-form input[type="text"], input[type='email'] {
+.contact-form input[type="text"],
+input[type='email'] {
   width: 100%;
   height: 50px;
   outline: none;
@@ -1113,6 +1115,7 @@ ul {
   border-right: 1px solid var(--main-color);
   color: #adabab;
 }
+
 .contact-form textarea {
   width: 100%;
   height: 30vh;
@@ -1123,16 +1126,167 @@ ul {
   color: #adabab;
 }
 
-.contact-form button{
+.contact-form button {
   width: 100%;
-  height: 35px;
+  padding: 10px;
   outline: none;
   border: none;
-  background:var(--main-color);
-  color: #1d1d1d;
+  background: var(--main-color);
+  color: #212529;
+  font-weight: bold;
 }
 
 /* End Contact Us Section */
+
+/* Start Footer Section */
+
+.footer {
+  position: relative;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .container h2 {
+  color: var(--main-color);
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.social-icons ul {
+  display: flex;
+}
+.container .social-icons ul li {
+  transition: var(--main-transition);
+}
+.social-icons ul a {
+  font-size: 1.7em;
+  padding: 10px 20px;
+  margin-right: 5px;
+  color: #fff;
+  background-color: rgb(13 14 35 / 50%);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.container .social-icons ul li:hover {
+  transform: scale(0.8);
+}
+.container .social-icons ul li .facebook:hover {
+  background-color: #1877f2;
+}
+.container .social-icons ul li .linkedin:hover {
+  background-color: #0077b5;
+}
+.container .social-icons ul li .github:hover {
+  background-color: #000;
+  color: #fff;
+}
+.container .social-icons ul li .instagram:hover {
+  background-color: #f56040;
+}
+
+.Contact-info {
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer .container .information {
+  margin: 0 0 15px;
+}
+
+.footer .container .information a {
+  color: var(--text-color);
+}
+
+.footer .container .information svg {
+  font-size: 22px;
+  color: var(--main-color);
+  margin-right: 10px;
+}
+
+.footer .container .text {
+  color: var(--text-color);
+  line-height: 2;
+  font-size: 14px;
+}
+
+.footer .copyright {
+  position: relative;
+  padding: 25px 0px;
+  text-align: center;
+  color: white;
+  margin: 20px 0px 0px;
+  border-top: 1px solid rgb(68, 68, 68);
+  transition: var(--main-transition);
+}
+
+.footer .copyright a {
+  color: white;
+}
+
+.footer .copyright span {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  transition: var(--main-transition);
+}
+
+.footer .copyright:hover span {
+  border-bottom: 2px solid var(--main-color);
+}
+
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer .container:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  .footer .container h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .container .social-icons {
+    justify-content: center;
+  }
+
+  .footer .container {
+    align-items: center;
+  }
+
+  .footer .container .information {
+    font-size: 18px;
+  }
+
+  .footer .container .information svg {
+    font-size: 17px;
+  }
+
+  .footer .container .information .info span {
+    margin-right: 5px;
+  }
+
+  .social-icons ul a {
+    font-size: 1.3em;
+    padding: 7px 12px;
+  }
+}
+
+/* End Footer Section */
 
 
 
