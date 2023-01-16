@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 
 :root {
   --main-color: #31cbf2;
@@ -663,7 +665,7 @@ ul {
   }
 
   .landing .left-content .inner-content aside {
-    min-width: 20%;
+    min-width: 18%;
   }
 
   .landing .right-slider {
@@ -836,7 +838,12 @@ ul {
 .skills-section {
   position: relative;
   padding-top: var(--section-padding);
+  text-align: center;
   overflow: hidden;
+}
+
+.skills-section h3 {
+  color: #adabab;
 }
 
 /* Start 3D Rotating Cube */
@@ -966,6 +973,12 @@ ul {
 /* Start Work Gallery Section */
 .gallery {
   padding-top: var(--section-padding);
+  text-align: center;
+}
+
+.gallery h3 {
+  margin: 0 0 50px;
+  color: #adabab;
 }
 
 .gallery .portfolio {
@@ -1015,10 +1028,10 @@ ul {
 .gallery .portfolio .info img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
   cursor: pointer;
 }
 
@@ -1035,10 +1048,10 @@ ul {
   bottom: -58px;
   left: 0;
   width: 100%;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .gallery .portfolio .info:hover .link-bottom {
@@ -1068,6 +1081,55 @@ ul {
 /* Start Contact Us Section */
 .contact {
   padding-top: var(--section-padding);
+}
+
+.contact .contact-desc p {
+  color: #adabab;
+
+}
+
+.contact .contact-desc .text-coding {
+  font-family: 'La Belle Aurore', cursive;
+  color: var(--main-color);
+}
+
+.contact-form {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 50px;
+}
+
+.contact-form input {
+  margin: 10px 0;
+}
+
+.contact-form input[type="text"], input[type='email'] {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #3a3939;
+  padding: 5px 20px;
+  border-right: 1px solid var(--main-color);
+  color: #adabab;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 30vh;
+  background: #3a3939;
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: #adabab;
+}
+
+.contact-form button{
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: none;
+  background:var(--main-color);
+  color: #1d1d1d;
 }
 
 /* End Contact Us Section */
