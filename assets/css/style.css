@@ -5,7 +5,7 @@
 :root {
   --main-color: #31cbf2;
   --main-color-alt: #2075d4;
-  --second-color:#dc004d;
+  --second-color: #dc004d;
   --bg-color: #000405;
   --section-padding: 50px;
   --text-color: #888;
@@ -1084,9 +1084,10 @@ ul {
   padding-top: var(--section-padding);
 }
 
-.contact .contact-desc p {
+.contact .contact-desc {
   color: #adabab;
-
+  width: 80%;
+  margin: 10px auto;
 }
 
 .contact .contact-desc .text-coding {
@@ -1095,9 +1096,9 @@ ul {
 }
 
 .contact-form {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 50px;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto 50px;
 }
 
 .contact-form input {
@@ -1112,7 +1113,7 @@ input[type='email'] {
   border: none;
   background: #3a3939;
   padding: 5px 20px;
-  border-right: 1px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
   color: #adabab;
 }
 
@@ -1136,101 +1137,72 @@ input[type='email'] {
   font-weight: bold;
 }
 
+@media (max-width: 500px) {
+  .contact .contact-desc {
+    width: 100%;
+  }
+}
+
 /* End Contact Us Section */
 
 /* Start Footer Section */
 
 .footer {
-  position: relative;
-  padding-top: 60px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  box-shadow: 0px 0px 6px 1px rgb(49 203 242 / 30%), inset 0px -5px 10px 0px var(--main-color-alt);
 }
 
 .footer .container h2 {
+  box-shadow: 0px -2px 10px 2px rgb(49 203 242 / 30%), inset -10px -10px 10px 0px var(--main-color-alt);
+  background-color: rgb(49 203 242 / 10%);
+  transition: var(--main-transition);
   color: var(--main-color);
-  margin: 0 0 20px;
-  text-align: left;
 }
 
-.social-icons ul {
-  display: flex;
-}
 .container .social-icons ul li {
   transition: var(--main-transition);
 }
+
 .social-icons ul a {
-  font-size: 1.7em;
-  padding: 10px 20px;
   margin-right: 5px;
-  color: #fff;
-  background-color: rgb(13 14 35 / 50%);
-  border-radius: 10px;
+  box-shadow: 0px -2px 10px 2px rgb(49 203 242 / 30%), inset 1px -4px 10px 0px var(--main-color-alt);
+  transition: var(--main-transition);
+  background-color: rgb(49 203 242 / 15%);
   transition: var(--main-transition);
 }
+
 .container .social-icons ul li:hover {
   transform: scale(0.8);
 }
+
 .container .social-icons ul li .facebook:hover {
   background-color: #1877f2;
 }
+
 .container .social-icons ul li .linkedin:hover {
   background-color: #0077b5;
 }
+
 .container .social-icons ul li .github:hover {
   background-color: #000;
-  color: #fff;
-}
-.container .social-icons ul li .instagram:hover {
-  background-color: #f56040;
-}
-
-.Contact-info {
-  font-size: 22px;
-  color: #fff;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.footer .container .information {
-  margin: 0 0 15px;
-}
-
-.footer .container .information a {
-  color: var(--text-color);
 }
 
 .footer .container .information svg {
-  font-size: 22px;
   color: var(--main-color);
   margin-right: 10px;
 }
 
 .footer .container .text {
-  color: var(--text-color);
   line-height: 2;
   font-size: 14px;
 }
 
 .footer .copyright {
-  position: relative;
-  padding: 25px 0px;
-  text-align: center;
-  color: white;
-  margin: 20px 0px 0px;
-  border-top: 1px solid rgb(68, 68, 68);
+  border-top: 2px solid rgb(39 64 114 / 30%);
   transition: var(--main-transition);
-}
-
-.footer .copyright a {
-  color: white;
 }
 
 .footer .copyright span {
   color: var(--main-color);
-  font-size: 20px;
-  font-weight: bold;
   transition: var(--main-transition);
 }
 
@@ -1238,57 +1210,7 @@ input[type='email'] {
   border-bottom: 2px solid var(--main-color);
 }
 
-
-@media (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
-
-  .footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .footer .container:not(:last-child) {
-    margin: 0 0 20px;
-  }
-
-  .footer .container h2 {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer .container .social-icons {
-    justify-content: center;
-  }
-
-  .footer .container {
-    align-items: center;
-  }
-
-  .footer .container .information {
-    font-size: 18px;
-  }
-
-  .footer .container .information svg {
-    font-size: 17px;
-  }
-
-  .footer .container .information .info span {
-    margin-right: 5px;
-  }
-
-  .social-icons ul a {
-    font-size: 1.3em;
-    padding: 7px 12px;
-  }
-}
-
 /* End Footer Section */
-
-
 
 
 
