@@ -30,17 +30,17 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 
-  <script>
+  <!-- <script>
     window.console = window.console || function (t) { };
-  </script>
+  </script> -->
 
-  <script>
+  <!-- <script>
     if (document.location.search.match(/type=embed/gi)) {
       window.parent.postMessage("resize", "*");
     }
-  </script>
+  </script> -->
 
-  <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+  <!-- <script src="https://cdn.lordicon.com/fudrjiwc.js"></script> -->
 
 </head>
 
@@ -119,9 +119,11 @@
               </ul>
               <div class="scrol">
                 <span></span>
-                <div class="scroll-icon" id="scroll">
-                  <i class="fas fa-arrow-down"></i>
-                </div>
+                <a href="#about">
+                  <div class="scroll-icon" id="scroll">
+                    <i class="fas fa-arrow-down"></i>
+                  </div>
+                </a>
                 <span></span>
               </div>
             </aside>
@@ -167,7 +169,7 @@
             <img src="assets/images/about.WebP" alt="about-img">
           </div>
           <div class="text mt-md-3 mt-sm-3 col-md-6 col-lg-6">
-            <h3>Who Am i ?</h3>
+            <h3 class="text-white-50">Who Am i ?</h3>
             <p>
               I'm is a software engineer who implements web designs through coding languages like HTML, CSS, and
               JavaScript.
@@ -183,7 +185,7 @@
                 rel="noopener noreferrer">Wikipedia</a>
             </p>
             <div class="contact-about">
-              <div class="btns">
+              <div class="btns d-flex">
                 <!-- <a class="cv" href="https://drive.google.com/file/d/1PjUsOn7Aj0QyT-y3jppipi5PfzOU9TcK/view?usp=share_link" target="_blanck">Download CV <i class="fas fa-download"></i></a> -->
                 <a class="cv" href="assets/images/files/Yehia-Gamal-Frontend.pdf">Download CV <i
                     class="fas fa-download"></i></a>
@@ -523,7 +525,7 @@
           <input type="email" placeholder="email" id="email"><br>
           <input type="text" id="text" placeholder="Subject"><br>
           <textarea name="text" placeholder="Send A Message"></textarea><br>
-          <button type="submit">Send</button>
+          <span>Send</span>
         </form>
       </div>
     </section>
@@ -562,8 +564,8 @@
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-4 mt-3 mb-3">
-            <h4 class="fs-4 mb-4 text-start">Contact Information</h4>
-            <div class="row text-start">
+            <h4 class="fs-4 mb-4">Contact Information</h4>
+            <div class="box-information row text-start">
               <div class="information mb-3 text-start">
                 <a class="text-white-50" href="tel:+201154869616" target="_blank" rel="noopener noreferrer"><i
                     class="fas fa-phone fs-5"></i>01154869616</a>
@@ -573,16 +575,16 @@
                     class="fab fa-whatsapp fs-5"></i>01154869616</a>
               </div>
               <div class="information mb-3 text-start">
-                <a class="text-white-50" href="https://www.linkedin.com/in/yehia-gamal" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-linkedin-in fs-5"></i>Yehia-Gamal</a>
+                <a class="text-white-50" href="https://www.linkedin.com/in/yehia-gamal" target="_blank"
+                  rel="noopener noreferrer"><i class="fab fa-linkedin-in fs-5"></i>Yehia-Gamal</a>
               </div>
               <div class="information mb-3 text-start">
-                <a class="text-white-50" href="https://github.com/Yehia-Gamal" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-github fs-5"></i>Yehia-Gamal</a>
+                <a class="text-white-50" href="https://github.com/Yehia-Gamal" target="_blank"
+                  rel="noopener noreferrer"><i class="fab fa-github fs-5"></i>Yehia-Gamal</a>
               </div>
               <div class="information mb-3 text-start">
-                <a class="text-white-50" href="mailto:yahia.elspaa@gmail.com" target="_blank" rel="noopener noreferrer"><i
-                    class="fas fa-envelope fs-5"></i>yahia.elspaa@gmail.com
+                <a class="text-white-50" href="mailto:yahia.elspaa@gmail.com" target="_blank"
+                  rel="noopener noreferrer"><i class="fas fa-envelope fs-5"></i>yahia.elspaa@gmail.com
                 </a>
               </div>
             </div>

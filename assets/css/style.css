@@ -254,9 +254,8 @@ ul {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: #1e1f26;
+  /* background-color: #1e1f26; */
   text-align: center;
-  /* padding: 0 2em; */
 }
 
 .nav .brandName {
@@ -273,6 +272,16 @@ ul {
 }
 
 .brandName:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: var(--second-color);
+}
+
+.background:hover .nav .brandName {
+  transform: translate3d(0, -10px, 22px);
+  color: var(--second-color);
+}
+
+.nav:hover .brandName {
   transform: translate3d(0, -10px, 22px);
   color: var(--second-color);
 }
@@ -550,8 +559,8 @@ ul {
 
 .landing .left-content .inner-content aside .scrol .scroll-icon {
   margin: 10px 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid var(--text-color);
   cursor: pointer;
@@ -678,6 +687,12 @@ ul {
   }
 }
 
+@media (max-width: 500px) {
+  .landing .left-content .inner-content main h2 {
+    font-size: 25px;
+  }
+}
+
 /* End Landing Page */
 
 /* Start About Section */
@@ -725,6 +740,12 @@ ul {
 
 .about .text p {
   color: var(--text-color);
+}
+
+.contact-about .btns {
+  gap: 30px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .about .text .link {
@@ -856,7 +877,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
   -webkit-animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
   -o-animation: rotate-skils 18s ease-in-out 1s infinite alternate-reverse;
@@ -978,7 +998,7 @@ ul {
 }
 
 .gallery h3 {
-  margin: 0 0 50px;
+  padding: 0 0 50px;
   color: #adabab;
 }
 
@@ -1127,11 +1147,12 @@ input[type='email'] {
   color: #adabab;
 }
 
-.contact-form button {
+.contact-form span {
+  display: block;
   width: 100%;
+  text-align: center;
   padding: 10px;
-  outline: none;
-  border: none;
+  cursor: pointer;
   background: var(--main-color);
   color: #212529;
   font-weight: bold;
@@ -1186,6 +1207,10 @@ input[type='email'] {
   background-color: #000;
 }
 
+.box-information {
+  margin-left: 25%;
+}
+
 .footer .container .information svg {
   color: var(--main-color);
   margin-right: 10px;
@@ -1215,6 +1240,18 @@ input[type='email'] {
 
 
 /* start Animation */
+
+@keyframes scroll {
+
+  0%,
+  to {
+    top: 7px
+  }
+
+  100% {
+    top: 30px
+  }
+}
 
 @keyframes border-radius_animation {
 
