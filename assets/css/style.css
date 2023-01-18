@@ -122,6 +122,83 @@ ul {
 
 /* End Global Rules */
 
+/* Whatsapp Contact */
+
+.Whatsapp-Contact {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+  width: 94px;
+  height: 94px;
+  background: #4ac534;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.phone-Contact,
+.Whatsapp-Contact {
+  position: fixed;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.phone-Contact {
+  background-color: #2b76ff;
+  right: 20px;
+  bottom: 20px;
+}
+
+.Whatsapp-Contact {
+  background-color: #4ac534;
+  right: 20px;
+  bottom: 80px;
+}
+
+.Whatsapp-Contact svg,
+.phone-Contact svg {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.phone-Contact svg {
+  font-size: 27px;
+}
+
+.Whatsapp-Contact svg {
+  font-size: 37px;
+}
+
+.phone-Contact:hover,
+.phone-Contact:focus,
+.Whatsapp-Contact:hover,
+.Whatsapp-Contact:focus,
+.phone-Contact:hover svg,
+.phone-Contact:focus svg,
+.Whatsapp-Contact:hover svg,
+.Whatsapp-Contact:focus svg {
+  transform: scale(1.1) rotate(360deg);
+}
+
+
 /* Start Header */
 .nav-container {
   height: 73px !important;
