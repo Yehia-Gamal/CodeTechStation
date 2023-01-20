@@ -130,6 +130,9 @@ ul {
 /* End Global Rules */
 
 /* Start Whatsapp Contact */
+.btn-social-buttons{
+  visibility: hidden;
+}
 
 .Whatsapp-Contact {
   bottom: 20px;
@@ -1396,6 +1399,14 @@ input[type='email'] {
   transform: scale(0.8);
 }
 
+.container .social-icons ul li .phone:hover {
+  background-color: #2b76ff;
+}
+
+.container .social-icons ul li .whatsapp:hover {
+  background-color: #4ac534;
+}
+
 .container .social-icons ul li .facebook:hover {
   background-color: #1877f2;
 }
@@ -1406,6 +1417,10 @@ input[type='email'] {
 
 .container .social-icons ul li .github:hover {
   background-color: #000;
+}
+
+.container .social-icons ul li .whatsapp:hover {
+  background-color: #4ac534;
 }
 
 .box-information {
