@@ -21,13 +21,16 @@ const particles = Particles.init({
 
 
 //Back To Top
+let contact = document.querySelector(".btn-social-buttons");
 let btnUp = document.querySelector(".top-btn");
 
 window.onscroll = function () {
   if (window.scrollY >= 400) {
     btnUp.classList.add("active")
+    contact.style.visibility = "visible";
   } else {
     btnUp.classList.remove("active")
+    contact.style.visibility = "hidden";
   }
   btnUp.onclick = function () {
     window.scrollTo({
@@ -36,26 +39,6 @@ window.onscroll = function () {
     });
   };
 };
-
-// //Back To Top
-// let btnUp = document.querySelector(".top-btn");
-
-// window.onscroll = function () {
-//   if (window.scrollY >= 400) {
-//     btnUp.style.visibility = "visible";
-//   } else {
-//     btnUp.style.visibility = "hidden";
-//   }
-//   btnUp.onclick = function () {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   };
-// };
-
-
-
 
 // Add Class Active To Header Nav And Remove 
 const active = document.querySelectorAll(".nav-container .nav-link");
