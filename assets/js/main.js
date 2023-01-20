@@ -19,6 +19,44 @@ const particles = Particles.init({
   ],
 });
 
+
+//Back To Top
+let btnUp = document.querySelector(".top-btn");
+
+window.onscroll = function () {
+  if (window.scrollY >= 400) {
+    btnUp.classList.add("active")
+  } else {
+    btnUp.classList.remove("active")
+  }
+  btnUp.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+};
+
+// //Back To Top
+// let btnUp = document.querySelector(".top-btn");
+
+// window.onscroll = function () {
+//   if (window.scrollY >= 400) {
+//     btnUp.style.visibility = "visible";
+//   } else {
+//     btnUp.style.visibility = "hidden";
+//   }
+//   btnUp.onclick = function () {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: "smooth",
+//     });
+//   };
+// };
+
+
+
+
 // Add Class Active To Header Nav And Remove 
 const active = document.querySelectorAll(".nav-container .nav-link");
 
