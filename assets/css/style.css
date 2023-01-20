@@ -850,7 +850,47 @@ ul {
 
 @media (max-width: 500px) {
   .landing .left-content .inner-content main h2 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .landing .left-content .inner-content main .qoute{
+    width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .landing .left-content .inner-content main h2 {
+    font-size: 18px;
+  }
+
+  .landing .left-content .inner-content main .btns{
+    gap: 25px;
+  }
+
+  .btns a{
+    padding: 10px;
+  }
+
+  .landing .left-content .inner-content main .qoute{
+    width: 100%;
+  }
+
+  .navbar-brand{
+    font-size: 15px;
+  }
+
+  .navbar-brand img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar-toggler{
+
+  }
+
+  .about .images img{
+    width: 80%;
+    height: 90%;
   }
 }
 
