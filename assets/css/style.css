@@ -1165,9 +1165,9 @@ html::-webkit-scrollbar-track:hover {
 .cube__face img {
   max-width: 100%;
   max-height: 100%;
-  width: 300px;
-  height: 280px;
-background: transparent;
+  width: 100%;
+  height: auto;
+  background: transparent;
 }
 
 .cube-face--left {
