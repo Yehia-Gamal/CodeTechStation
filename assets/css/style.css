@@ -1485,6 +1485,20 @@ input[type='email'] {
 
 
 
+/* Scroll Animaition */
+main .box {
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+main .box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+main .box.show {
+  transform: translateX(0px);
+}
+
+
 /* start Animation */
 
 @keyframes btn-top {
