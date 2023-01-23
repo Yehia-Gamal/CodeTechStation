@@ -165,7 +165,7 @@ html::-webkit-scrollbar-track:hover {
 /* End Global Rules */
 
 /* Start Whatsapp Contact */
-.btn-social-buttons{
+.btn-social-buttons {
   visibility: hidden;
 }
 
@@ -312,6 +312,7 @@ html::-webkit-scrollbar-track:hover {
 .icons-back-top:hover svg {
   color: var(--second-color);
 }
+
 /* End Back Top */
 
 
@@ -718,8 +719,8 @@ html::-webkit-scrollbar-track:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 25%;
-}
+  align-items: flex-start;
+  margin-right: 30px;}
 
 .landing .left-content .inner-content aside ul {
   margin: 0;
@@ -873,10 +874,6 @@ html::-webkit-scrollbar-track:hover {
     width: 100%;
   }
 
-  .landing .left-content .inner-content aside {
-    min-width: 18%;
-  }
-
   .landing .right-slider {
     width: 100%;
   }
@@ -891,7 +888,7 @@ html::-webkit-scrollbar-track:hover {
     font-size: 20px;
   }
 
-  .landing .left-content .inner-content main .qoute{
+  .landing .left-content .inner-content main .qoute {
     width: 95%;
   }
 }
@@ -901,32 +898,30 @@ html::-webkit-scrollbar-track:hover {
     font-size: 18px;
   }
 
-  .landing .left-content .inner-content main .btns{
+  .landing .left-content .inner-content main .btns {
     gap: 25px;
   }
 
-  .btns a{
+  .btns a {
     padding: 10px;
   }
 
-  .landing .left-content .inner-content main .qoute{
+  .landing .left-content .inner-content main .qoute {
     width: 100%;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     font-size: 15px;
   }
 
-  .navbar-brand img{
+  .navbar-brand img {
     width: 35px;
     height: 35px;
   }
 
-  .navbar-toggler{
+  .navbar-toggler {}
 
-  }
-
-  .about .images img{
+  .about .images img {
     width: 80%;
     height: 90%;
   }
