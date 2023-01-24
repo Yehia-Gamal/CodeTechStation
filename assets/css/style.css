@@ -1490,6 +1490,10 @@ input[type='email'] {
 
 
 /* Scroll Animaition */
+main {
+  overflow: hidden;
+}
+
 main .trans-x {
   transform: translateX(400%);
   transition: transform 1s ease;
