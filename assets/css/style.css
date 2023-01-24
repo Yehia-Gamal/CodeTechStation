@@ -1511,7 +1511,7 @@ main .trans-y {
   transition: transform 1s ease;
 }
 main .trans-y:nth-of-type(even) {
-  transform: translateY(-400%);
+  transform: translateY(-400vh);
 }
 main .trans-y.show {
   transform: translateY(0px);
