@@ -753,6 +753,7 @@ html::-webkit-scrollbar-track:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 50px;
+  z-index: 5;
 }
 
 .landing .left-content .inner-content aside .scrol span {
@@ -1490,16 +1491,16 @@ input[type='email'] {
 
 
 /* Scroll Animaition */
-main {
+main section {
   overflow: hidden;
 }
 
 main .trans-x {
-  transform: translateX(400%);
+  transform: translateX(2000px);
   transition: transform 1s ease;
 }
 main .trans-x:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-2000px);
 }
 main .trans-x.show {
   transform: translateX(0px);
@@ -1507,11 +1508,11 @@ main .trans-x.show {
 
 
 main .trans-y {
-  transform: translateY(-400vh);
-  transition: transform 1s ease;
+  transform: translateY(-400%);
+  transition: transform 1.5s ease;
 }
 main .trans-y:nth-of-type(even) {
-  transform: translateY(-400vh);
+  transform: translateY(-400%);
 }
 main .trans-y.show {
   transform: translateY(0px);
