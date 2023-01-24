@@ -165,8 +165,12 @@ html::-webkit-scrollbar-track:hover {
 /* End Global Rules */
 
 /* Start Whatsapp Contact */
-.btn-social-buttons {
-  visibility: hidden;
+.btn-social-buttons a {
+  transform: scale(0);
+}
+
+.btn-social-buttons.show a {
+  transform: scale(1);
 }
 
 .Whatsapp-Contact {
@@ -1486,16 +1490,36 @@ input[type='email'] {
 
 
 /* Scroll Animaition */
-main .box {
+main .trans-x {
   transform: translateX(400%);
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
 }
-
-main .box:nth-of-type(even) {
+main .trans-x:nth-of-type(even) {
   transform: translateX(-400%);
 }
-main .box.show {
+main .trans-x.show {
   transform: translateX(0px);
+}
+
+
+main .trans-y {
+  transform: translateY(-400vh);
+  transition: transform 1s ease;
+}
+main .trans-y:nth-of-type(even) {
+  transform: translateY(-400%);
+}
+main .trans-y.show {
+  transform: translateY(0px);
+}
+
+
+main .scale{
+  transform: scale(0);
+  transition: transform 1.5s ease;
+}
+main .scale.show {
+  transform: scale(1);
 }
 
 

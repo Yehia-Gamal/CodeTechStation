@@ -26,11 +26,11 @@ let btnUp = document.querySelector(".top-btn");
 
 window.onscroll = function () {
   if (window.scrollY >= 400) {
-    btnUp.classList.add("active")
-    contact.style.visibility = "visible";
+    btnUp.classList.add("active");
+    contact.classList.add("show");
   } else {
-    btnUp.classList.remove("active")
-    contact.style.visibility = "hidden";
+    btnUp.classList.remove("active");
+    contact.classList.remove("show");
   }
   btnUp.onclick = function () {
     window.scrollTo({
@@ -80,7 +80,9 @@ speedEl.addEventListener("input", (e) => (speed = 300 / e.target.value));
 
 // Scroll Animaition
 
-let boxes = document.querySelectorAll("main .box");
+let trans_x = document.querySelectorAll("main .trans-x");
+let trans_y = document.querySelectorAll("main .trans-y");
+let scale = document.querySelectorAll("main .scale");
 
 window.addEventListener("scroll", sheckBoxes);
 
@@ -89,7 +91,27 @@ sheckBoxes();
 function sheckBoxes() {
   let triggerBottom = (window.innerHeight / 5) * 4;
 
-  boxes.forEach((box) => {
+  trans_x.forEach((box) => {
+    let boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+
+  trans_y.forEach((box) => {
+    let boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+
+  scale.forEach((box) => {
     let boxTop = box.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
