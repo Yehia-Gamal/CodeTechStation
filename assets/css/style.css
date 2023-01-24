@@ -724,7 +724,8 @@ html::-webkit-scrollbar-track:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 30px;}
+  margin-right: 30px;
+}
 
 .landing .left-content .inner-content aside ul {
   margin: 0;
@@ -1499,30 +1500,31 @@ main .trans-x {
   transform: translateX(2000px);
   transition: transform 1s ease;
 }
+
 main .trans-x:nth-of-type(even) {
   transform: translateX(-2000px);
 }
+
 main .trans-x.show {
   transform: translateX(0px);
 }
 
 
 main .trans-y {
-  transform: translateY(-400%);
+  transform: translateY(-400vh);
   transition: transform 1.5s ease;
 }
-main .trans-y:nth-of-type(even) {
-  transform: translateY(-400%);
-}
+
 main .trans-y.show {
   transform: translateY(0px);
 }
 
 
-main .scale{
+main .scale {
   transform: scale(0);
   transition: transform 1.5s ease;
 }
+
 main .scale.show {
   transform: scale(1);
 }
