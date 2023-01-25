@@ -32,6 +32,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* scrollbar */
+
 body::-webkit-scrollbar {
   width: 1em;
   background-color: #000a0c;
@@ -136,31 +138,6 @@ ul {
   z-index: -1;
   animation: right-move 0.5s linear forwards;
 }
-
-
-/* scrollbar */
-
-/*
-html::-webkit-scrollbar {
-  width: 1vw;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #243b56;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background-color: #777;
-}
-
-html::-webkit-scrollbar-track {
-  background-color:  var(--main-color);
-}
-
-html::-webkit-scrollbar-track:hover {
-  background-color: #555;
-}
-*/
 
 /* End Global Rules */
 
@@ -319,7 +296,6 @@ html::-webkit-scrollbar-track:hover {
 
 /* End Back Top */
 
-
 /* Start Header */
 .nav-container {
   height: 73px !important;
@@ -335,7 +311,6 @@ html::-webkit-scrollbar-track:hover {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 999;
-
 }
 
 @media (max-width: 767px) {
@@ -452,7 +427,6 @@ html::-webkit-scrollbar-track:hover {
   align-items: center;
   height: 100vh;
   position: relative;
-  /* background-color: #1e1f26; */
   text-align: center;
 }
 
@@ -632,8 +606,6 @@ html::-webkit-scrollbar-track:hover {
 
 .landing {
   position: relative;
-  /* display: -webkit-box;
-  display: -ms-flexbox; */
   display: flex;
   height: calc(100vh - 70px);
   background-image: url(../images/Bg-landing.WebP);
@@ -925,8 +897,6 @@ html::-webkit-scrollbar-track:hover {
     height: 35px;
   }
 
-  .navbar-toggler {}
-
   .about .images img {
     width: 80%;
     height: 90%;
@@ -936,6 +906,7 @@ html::-webkit-scrollbar-track:hover {
 /* End Landing Page */
 
 /* Start About Section */
+
 .about {
   padding-top: var(--section-padding);
 }
@@ -1020,6 +991,7 @@ html::-webkit-scrollbar-track:hover {
 /* End About Section */
 
 /* Start Services Section */
+
 .services {
   padding-top: var(--section-padding);
 }
@@ -1097,6 +1069,7 @@ html::-webkit-scrollbar-track:hover {
 /* End Services Section */
 
 /* Start Skills Section */
+
 .skills-section {
   position: relative;
   padding-top: var(--section-padding);
@@ -1108,7 +1081,7 @@ html::-webkit-scrollbar-track:hover {
   color: #adabab;
 }
 
-/* Start 3D Rotating Cube */
+/* 3D Rotating Cube */
 .career-section-image {
   position: relative;
   -webkit-box-flex: 1;
@@ -1227,11 +1200,10 @@ html::-webkit-scrollbar-track:hover {
   }
 }
 
-/* End 3D Rotating Cube */
-
 /* End Skills Section */
 
 /* Start Work Gallery Section */
+
 .gallery {
   padding-top: var(--section-padding);
   text-align: center;
@@ -1340,6 +1312,7 @@ html::-webkit-scrollbar-track:hover {
 /* End Work Gallery Section */
 
 /* Start Contact Us Section */
+
 .contact {
   padding-top: var(--section-padding);
 }
@@ -1492,6 +1465,7 @@ input[type='email'] {
 
 
 /* Scroll Animaition */
+
 main section {
   overflow: hidden;
 }
