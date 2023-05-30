@@ -367,26 +367,26 @@ ul {
 
 .nav-link {
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--main-color);
+  color: var(--second-color);
   font-weight: bold;
 }
 
 .navbar-brand:focus,
 .navbar-brand:hover {
-  color: var(--main-color);
+  color: var(--second-color);
 }
 
 .navbar-toggler {
-  border-color: var(--text-color);
+  border-color: var(--second-color);
 }
 
 .navbar-toggler:focus {
-  box-shadow: 0px 0px 8px 3px var(--main-color);
+  box-shadow: 0px 0px 8px 3px var(--second-color);
 }
 
 .navbar-toggler {
@@ -407,7 +407,7 @@ ul {
 .navbar-nav .nav-link:focus,
 .navbar-nav .show>.nav-link:focus,
 .navbar-nav .show>.nav-link {
-  color: var(--main-color);
+  color: var(--second-color);
   font-weight: bold;
 }
 
@@ -428,6 +428,7 @@ ul {
   height: 100vh;
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav .brandName {
@@ -1461,6 +1462,298 @@ input[type='email'] {
 }
 
 /* End Footer Section */
+
+
+
+
+
+
+/* Start Footer */
+footer {
+  background: -o-linear-gradient(135deg, #000 0%, #000a0c 74%);
+  background: linear-gradient(315deg, #000 0%, #000a0c 74%);
+  padding: 30px 0 0;
+}
+
+
+footer .title {
+  position: relative;
+  font-weight: bold;
+  color: var(--main-color);
+  border-bottom: 3px solid var(--second-color);
+  padding-bottom: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto 20px;
+  border-radius: 10px;
+}
+
+footer .title::before {
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color: transparent;
+  border-top-color: var(--main-color);
+  bottom: -23px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+footer .title {
+  margin-bottom: 40px;
+}
+
+footer .links {
+  direction: rtl;
+}
+
+footer .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+footer .links li {
+  border: 1px solid var(--second-color);
+  border-radius: 20px;
+  margin: 3px;
+  padding: 5px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+footer .links li:hover {
+  margin-right: 20px;
+}
+
+footer .links li a {
+  color: var(--main-color);
+  font-weight: bold;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+footer .links li a svg {
+  margin-left: 10px;
+  color: var(--second-color);
+}
+
+.contribution img {
+  width: 200px;
+  height: 200px;
+}
+
+.contribution .vodafone {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.contribution .vodafone .voda {
+  border-bottom: 2px solid var(--second-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.contribution .vodafone .voda span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contribution .vodafone .voda svg {
+  color: var(--second-color);
+  margin: 0 10px;
+}
+
+
+footer .contact-us {
+  text-align: center;
+}
+
+footer .contact-us .button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+footer .contact-us .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 75px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+footer .contact-us .button .icon svg {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+footer .contact-us .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+footer .contact-us .button:hover {
+  width: 200px;
+  text-align: left;
+}
+
+footer .contact-us .facebook-icon:hover .icon {
+  background-color: #395295;
+  color: #fff;
+}
+
+footer .contact-us .phone-icon:hover .icon {
+  background-color: #2b76ff;
+  color: #fff;
+}
+
+footer .contact-us .github-icon:hover .icon {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .contact-us .email-icon:hover .icon {
+  background-color: #64a6d8;
+  color: #fff;
+}
+
+footer .contact-us .linkedin-icon:hover .icon {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .contact-us .whatsapp-icon:hover .icon {
+  background-color: #447634;
+  color: #fff;
+}
+
+footer .contact-us .facebook-icon:hover span {
+  color: #395295;
+}
+
+footer .contact-us .email-icon:hover span {
+  color: #64a6d8;
+}
+
+footer .contact-us .github-icon:hover span {
+  color: #000;
+}
+
+footer .contact-us .phone-icon:hover span {
+  color: #2b76ff;
+}
+
+footer .contact-us .linkedin-icon:hover span {
+  color: #000;
+}
+
+footer .contact-us .whatsapp-icon:hover span {
+  color: #447634;
+}
+
+.copyrights {
+  text-align: center;
+  margin: 30px 0 0;
+  font-size: 18px;
+  padding: 10px 0 10px;
+  border-top: 1px solid var(--second-color);
+}
+
+.copyrights a {
+  color: var(--main-color);
+}
+
+.copyrights a span {
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+@media(max-width: 767px) {
+  footer .contact-us .button {
+    width: 40px;
+    height: 40px;
+  }
+
+  footer .contact-us .button .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 48px;
+  }
+
+  footer .contact-us .button .icon svg {
+    font-size: 25px;
+  }
+
+  footer .contact-us .button:hover {
+    width: 150px;
+  }
+
+  footer .contact-us .button span {
+    line-height: 46px;
+    margin-left: 2px;
+  }
+
+  footer .links ul {
+    display: block;
+  }
+
+
+  footer .links li:hover a {
+    margin-right: 20px;
+  }
+
+  .contribution .vodafone .voda svg {
+    margin: 0px 3px;
+  }
+
+}
+
+
+@media (max-width:360px) {
+  .copyrights {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:320px) {
+  .copyrights {
+    font-size: 13px;
+  }
+}
+
+/* End Footer */
+
+
 
 
 
