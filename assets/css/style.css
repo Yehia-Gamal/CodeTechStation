@@ -1381,94 +1381,6 @@ input[type='email'] {
 /* End Contact Us Section */
 
 /* Start Footer Section */
-
-.footer {
-  box-shadow: 0px 0px 6px 1px rgb(49 203 242 / 30%), inset 0px -5px 10px 0px var(--main-color-alt);
-}
-
-.footer .container h2 {
-  box-shadow: 0px -2px 10px 2px rgb(49 203 242 / 30%), inset -10px -10px 10px 0px var(--main-color-alt);
-  background-color: rgb(49 203 242 / 10%);
-  transition: var(--main-transition);
-  color: var(--main-color);
-}
-
-.container .social-icons ul li {
-  transition: var(--main-transition);
-}
-
-.social-icons ul a {
-  margin-right: 5px;
-  box-shadow: 0px -2px 10px 2px rgb(49 203 242 / 30%), inset 1px -4px 10px 0px var(--main-color-alt);
-  transition: var(--main-transition);
-  background-color: rgb(49 203 242 / 15%);
-  transition: var(--main-transition);
-}
-
-.container .social-icons ul li:hover {
-  transform: scale(0.8);
-}
-
-.container .social-icons ul li .phone:hover {
-  background-color: #2b76ff;
-}
-
-.container .social-icons ul li .whatsapp:hover {
-  background-color: #4ac534;
-}
-
-.container .social-icons ul li .facebook:hover {
-  background-color: #1877f2;
-}
-
-.container .social-icons ul li .linkedin:hover {
-  background-color: #0077b5;
-}
-
-.container .social-icons ul li .github:hover {
-  background-color: #000;
-}
-
-.container .social-icons ul li .whatsapp:hover {
-  background-color: #4ac534;
-}
-
-.box-information {
-  margin-left: 25%;
-}
-
-.footer .container .information svg {
-  color: var(--main-color);
-  margin-right: 10px;
-}
-
-.footer .container .text {
-  line-height: 2;
-  font-size: 14px;
-}
-
-.footer .copyright {
-  border-top: 2px solid rgb(39 64 114 / 30%);
-  transition: var(--main-transition);
-}
-
-.footer .copyright span {
-  color: var(--main-color);
-  transition: var(--main-transition);
-}
-
-.footer .copyright:hover span {
-  border-bottom: 2px solid var(--main-color);
-}
-
-/* End Footer Section */
-
-
-
-
-
-
-/* Start Footer */
 footer {
   background: -o-linear-gradient(135deg, #000 0%, #000a0c 74%);
   background: linear-gradient(315deg, #000 0%, #000a0c 74%);
@@ -1543,7 +1455,7 @@ footer .links li a {
 }
 
 footer .links li a svg {
-  margin-left: 10px;
+  margin-right: 10px;
   color: var(--second-color);
 }
 
@@ -1583,11 +1495,10 @@ footer .contact-us .button {
   width: 60px;
   height: 60px;
   margin: 0 5px;
-  background: #fff;
   border-radius: 50px;
   cursor: pointer;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 10px var(--second-color);
+  box-shadow: 0px 0px 10px var(--second-color);
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -1606,8 +1517,7 @@ footer .contact-us .button .icon {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: var(--main-color);
-  background-color: #fff;
+  color: var(--main-color-alt);
 }
 
 footer .contact-us .button .icon svg {
@@ -1625,6 +1535,8 @@ footer .contact-us .button span {
 footer .contact-us .button:hover {
   width: 200px;
   text-align: left;
+  align-items: center;
+  display: flex;
 }
 
 footer .contact-us .facebook-icon:hover .icon {
@@ -1666,7 +1578,7 @@ footer .contact-us .email-icon:hover span {
 }
 
 footer .contact-us .github-icon:hover span {
-  color: #000;
+  color: #fff;
 }
 
 footer .contact-us .phone-icon:hover span {
@@ -1674,7 +1586,7 @@ footer .contact-us .phone-icon:hover span {
 }
 
 footer .contact-us .linkedin-icon:hover span {
-  color: #000;
+  color: #fff;
 }
 
 footer .contact-us .whatsapp-icon:hover span {
@@ -1751,10 +1663,7 @@ footer .contact-us .whatsapp-icon:hover span {
   }
 }
 
-/* End Footer */
-
-
-
+/* End Footer Section */
 
 
 /* Scroll Animaition */
